@@ -6,8 +6,9 @@ interface IDropdownProps {
     children: React.ReactNode,
     isOpen?: boolean,
     onOpen?: () => void,
-    onClose?: () => void
+    onClose?: () => void,
 }
+
 const NOOP = () => {};
 
 export function Dropdown({
@@ -19,9 +20,7 @@ export function Dropdown({
   React.useEffect(() => (isDropdownOpen ? onOpen() : onClose()), [isDropdownOpen]);
 
   const handleOpen = () => {
-    if (isOpen === undefined) {
-      setIsDropdownOpen(!isDropdownOpen);
-    }
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (

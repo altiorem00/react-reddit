@@ -4,6 +4,7 @@ import { CardUser } from './CardUser';
 import { CardDate } from './CardDate';
 import { CardMenu } from './CardMenu';
 import { CardControls } from './CardControls';
+import { CardDropdown } from './CardDropdown/CardDropdown';
 
 export function Card(): JSX.Element {
   return (
@@ -31,7 +32,7 @@ export function Card(): JSX.Element {
           alt=""
         />
       </div>
-      <CardMenu />
+      <CardDropdown button={<CardMenu />} />
       <CardControls />
     </li>
   );
