@@ -10,7 +10,7 @@ interface IItem {
 }
 
 interface IGenericListProps {
-    list: Array<IItem>
+    list: Array<IItem>,
 }
 
 export function GenericList({ list }: IGenericListProps) {

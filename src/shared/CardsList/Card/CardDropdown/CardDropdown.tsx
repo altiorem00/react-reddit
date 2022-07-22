@@ -1,18 +1,11 @@
 import React from 'react';
 import styles from './cardDropdown.css';
 import { Dropdown } from '../../../Dropdown';
-import { GenericList } from '../../../GenericList';
-import { generateId } from '../../../../utils/react/generateRandomIndex';
+import { CardDropdownList } from './CardDropdownList/CardDropdownList';
 
 interface ICardDropdownProps {
     button: React.ReactNode
 }
-
-const LIST = [
-  { text: 'some' },
-  { text: 'test' },
-  { text: 'some' },
-].map(generateId);
 
 export function CardDropdown({ button }: ICardDropdownProps) {
   return (
@@ -21,7 +14,9 @@ export function CardDropdown({ button }: ICardDropdownProps) {
         button={button}
         isOpen={false}
       >
-        <GenericList list={LIST} />
+        <div className={styles.dropdown}>
+          <CardDropdownList />
+        </div>
       </Dropdown>
     </div>
   );

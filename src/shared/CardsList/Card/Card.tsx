@@ -32,7 +32,7 @@ export function Card(): JSX.Element {
           alt=""
         />
       </div>
-      <CardDropdown button={<CardMenu />} />
+      <CardMenu />
       <CardControls />
     </li>
   );
