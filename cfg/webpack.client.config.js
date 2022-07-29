@@ -1,5 +1,5 @@
 const path = require('path');
-const { HotModuleReplacementPlugin } = require('webpack');
+const { HotModuleReplacementPlugin, definePlugin } = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const { NODE_ENV } = process.env;
