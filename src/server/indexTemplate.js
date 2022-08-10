@@ -1,4 +1,4 @@
-export const indexTemplate = (content) => `
+export const indexTemplate = (content, token) => `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +8,9 @@ export const indexTemplate = (content) => `
     <meta name="HandheldFriendly" content="true">
     <title>Reddit</title>
     <script src="/static/index.js" type="application/javascript"></script>
+    <script >
+        window.__token__ = '${token}'
+    </script>
 </head>
 <body>
 <div id="react__root">${content}</div>

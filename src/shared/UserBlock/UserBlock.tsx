@@ -4,7 +4,7 @@ import { Icon } from '../Icon';
 
 interface IUserBlock {
     avatarSrc?: string,
-    username?: string
+    username?: string,
 }
 
 export function UserBlock({ avatarSrc, username }: IUserBlock) {
