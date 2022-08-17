@@ -21,7 +21,9 @@ button {
 .card > * + * {
     padding: 13px 0 0;
 }
-
+.card + .card {
+    margin-top: 24px;
+}
 .card:hover h2 a, .card:focus-within h2 a {
     color: var(--orange);
 }
@@ -85,8 +87,7 @@ button {
 
 .metaData {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    flex-direction: column;
     font-size: 10px;
     line-height: 12px;
 }
@@ -105,8 +106,8 @@ button {
     }
 
     .metaData {
-        flex-flow: row-reverse nowrap;
-        justify-content: flex-end;
+        display: flex;
+        flex-direction: column-reverse;
         font-size: 14px;
         line-height: 16px;
     }

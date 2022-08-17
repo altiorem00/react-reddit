@@ -25,6 +25,7 @@
         "react/button-has-type": [0],
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
+        "react/jsx-no-constructed-context-values": "off",
         "jsx-a11y/click-events-have-key-events": "off",
         "react/require-default-props": [0],
         "jsx-a11y/no-static-element-interactions": "off",

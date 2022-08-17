@@ -5,6 +5,5 @@ export function useToken() {
   useEffect(() => {
     if (window.__token__) setToken(window.__token__);
   }, []);
-  console.log(token);
   return [token];
 }
